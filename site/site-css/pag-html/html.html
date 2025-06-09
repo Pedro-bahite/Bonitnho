@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../grid-princ.css">
+    <link rel="stylesheet" href="html.css">
+</head>
+<body>
+    <div id="container-grid">
+        <header>
+            <a href="../index.html" class="header-nav">Voltar</a>
+            <h1 class="center title-princ">HTML</h1>
+            <hr>
+        </header>
+        <nav>
+            <ul class="nav-container">
+                <li><a href="#TAGS GERAIS" class="nav-button">TAGS GERAIS</a></li>
+                <li><a href="#TEXTO" class="nav-button">TEXTO</a></li>
+                <li><a href="#IMAGENS E MULTIMÍDIA" class="nav-button">IMAGENS E MULTIMÍDIA</a></li>
+                <li><a href="#LINKS E IFRAMES" class="nav-button">LINKS E IFRAMES</a></li>
+                <li><a href="#FORMULÁRIOS" class="nav-button">FORMULÁRIOS</a></li>
+                <li><a href="#TABELAS" class="nav-button">TABELAS</a></li>
+                <li><a href="#LISTAS" class="nav-button">LISTAS</a></li>
+                <li><a href="#DIVISÓRIAS" class="nav-button">DIVISÓRIAS</a></li>
+            </ul>
+        </nav>
+        <main>
+            <hr>
+             <fieldset class="fieldset">
+                <h2 id="TAGS GERAIS" class="center subtitle"> TAGS GERAIS </h2>
+                <p class="center"><code> &lt;!DOCTYPE>: Define o tipo de documento e a versão do HTML </code></p>
+                <p class="center"><code> &lt;html>	Raiz de um documento HTML </code></p>
+                <p class="center"><code> &lt;head>	Contém metadados/informações para o documento </code></p>
+                <p class="center"><code> &lt;meta>	Define metadados sobre o documento HTML </code></p>
+                <p class="center"><code> &lt;title>	Define o título para o documento </code></p>
+                <p class="center"><code> &lt;body>	Contém o conteúdo visível da página </code></p>
+                <p class="center"><code> &lt;style>	Usada para incluir informações de estilo CSS. </code></p>
+                <p class="center"><code> &lt;script> Usada para incluir ou referenciar um código JavaScript em um documento HTML. </code></p>
+                <fieldset class="fieldset_exe">
+                    <code><pre>
+                        &lt;!DOCTYPE html&gt;
+        &lt;html lang="pt-BR"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;title&gt;Exemplo de Código&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Olá, Mundo!&lt;/h1&gt;
+                &lt;p&gt;Este é um exemplo simples de código HTML.&lt;/p&gt;
+            &lt;/body&gt;
+        &lt;/html&gt;
+            </code></pre>
+                </fieldset>
+            </fieldset>
+           
+            <fieldset class="fieldset">
+                <h2 id="TEXTO" class="center subtitle"> TEXTO </h2>
+                <p class="center"><code> &lt;h1> a &lt;h6>	Cabeçalhos de seção</code></p>
+                <p class="center"><code> &lt;p>	Define um parágrafo</code></p>
+                <p class="center"><code> &lt;br>	Insere uma quebra de linha</code></p>
+                <p class="center"><code> &lt;hr>	Insere uma quebra temática (mudança de assunto) na página</code></p>
+                <p class="center"><code> &lt;pre>	Define texto pré-formatado</code></p>
+                <p class="center"><code> &lt;blockquote>	Define uma seção que é citada de outra fonte</code></p>
+                <fieldset class="fieldset_exe">
+                    <code><pre>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html lang="pt-BR"&gt;
+                        &lt;head&gt;
+                            &lt;meta charset="UTF-8"&gt;
+                            &lt;title>Texto em HTML</title&gt;
+                            &lt;head&gt;
+                            &lt;body&gt;
+                        
+                            &lt;h1>Título Principal</h1&gt;
+                            &lt;h2>Subtítulo</h2&gt;
+                        
+                            &lt;p>Este é um parágrafo com uma<br>quebra de linha.&lt;/p&gt;
+                        
+                            &lt;hr&gt;
+                        
+                            &lt;pre&gt;
+                        Texto pré-formatado
+                        linha 1
+                        linha 2
+                            &lt;/pre&gt;
+                        
+                            &lt;blockquote&gt;
+                                "Citação de exemplo."
+                            &lt;/blockquote&gt;
+                        
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                    </pre>
+                    </code>
+                </fieldset>
+            </fieldset>
+            <fieldset class="fieldset">
+                <h2 id="IMAGENS E MULTIMÍDIA" class="center subtitle"> IMAGENS E MULTIMÍDIA </h2>
+                <p class="center"><code> &lt;img>	Incorpora uma imagem</code></p>
+                <p class="center"><code> &lt;figcaption>	Define uma legenda para o elemento &lt;figure></code></p>
+                <p class="center"><code> &lt;audio>	Incorpora som</code></p>
+                <p class="center"><code> &lt;source>	Especifica múltiplas fontes de mídia para elementos &lt;video> ou &lt;audio></code></p>
+                <p class="center"><code> &lt;video>	Incorpora um vídeo</code></p>
+                <fieldset class="fieldset_exe">
+                    <code><pre>
+                        &lt;html lang="pt-BR"&gt;
+                        &lt;head&gt;
+                            &lt;meta charset="UTF-8"&gt;
+                            &lt;title&gt;Texto em HTML&lt;/title&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                        
+                            &lt;h1&gt;Título Principal&lt;/h1&gt;
+                            &lt;h2&gt;Subtítulo&lt;/h2&gt;
+                        
+                            &lt;p&gt;Este é um parágrafo com uma&lt;br&gt;quebra de linha.&lt;/p&gt;
+                        
+                            &lt;hr&gt;
+                        
+                            &lt;pre&gt;
+                        Texto pré-formatado
+                        linha 1
+                        linha 2
+                            &lt;/pre&gt;
+                        
+                            &lt;blockquote&gt;
+                                "Citação de exemplo."
+                            &lt;/blockquote&gt;
+                        
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                        
+
+                    </pre>
+                    </code>
+                </fieldset>
+            </fieldset>
+            <fieldset class="fieldset">
+                <h2 id="LINKS E IFRAMES"class="center subtitle"> LINKS E IFRAMES </h2>
+                <p class="center"><code> &lt;a>	Define um hiperlink</code></p>
+                <p class="center"><code> &lt;iframe>	Define um quadro embutido (inline frame)</code></p>
+                <fieldset class="fieldset_exe">
+                    <code><pre>
+                     
+                        
+                    </pre>
+                    </code>
+                </fieldset>
+            </fieldset>
+            <fieldset class="fieldset">
+                <h2 id="FORMULÁRIOS"class= "center subtitle"> FORMULÁRIOS </h2>
+                <p class="center"><code> &lt;form>	Define um formulário para entrada do usuário
+                <p class="center"><code> &lt;input>	Define um campo de entrada
+                <p class="center"><code> &lt;textarea>	Define um campo de texto multilinha
+                <p class="center"><code> &lt;label>	Define uma etiqueta para um elemento &lt;input>
+                <p class="center"><code> &lt;button>	Define um botão clicável
+                <p class="center"><code> &lt;select>	Define uma lista suspensa
+                <p class="center"><code> &lt;option>	Define uma opção dentro de um elemento &lt;select>
+                <p class="center"><code> &lt;fieldset>	Agrupa elementos relacionados em um formulário
+                <p class="center"><code> &lt;legend>	Define um título para o grupo &lt;fieldset>
+            </fieldset>
+            <fieldset class="fieldset">
+                <h2 id="TABELAS" class= "center subtitle"> TABELAS </h2>
+                <p class="center"><code> &lt;table>	Define uma tabela</code></p>
+                <p class="center"><code> &lt;tr>	Define uma linha em uma tabela</code></p>
+                <p class="center"><code> &lt;td>	Define uma célula em uma tabela</code></p>
+                <p class="center"><code> &lt;th>	Define uma célula de cabeçalho em uma tabela</code></p>
+                <p class="center"><code> &lt;thead>	Agrupa cabeçalhos de colunas em uma tabela</code></p>
+                <p class="center"><code> &lt;tbody>	Agrupa o corpo do conteúdo em uma tabela</code></p>
+                <p class="center"><code> &lt;tfoot>	Agrupa rodapés de colunas em uma tabela</code></p>
+                <p class="center"><code> &lt;caption>	Define o título de uma tabela</code></p>
+            </fieldset>
+            <fieldset class="fieldset">
+                <h2 id="LISTA" class= "center subtitle"> LISTA </h2>
+                <p class="center"><code> &lt;ul>	Define uma lista não ordenada</code></p>
+                <p class="center"><code> &lt;ol>	Define uma lista ordenada</code></p>
+                <p class="center"><code> &lt;li>	Define um item de uma lista</code></p>
+                <p class="center"><code> &lt;dl>	Define uma lista de descrição</code></p>
+                <p class="center"><code> &lt;dt>	Define um termo na lista de descrição</code></p>
+                <p class="center"><code> &lt;dd>	Descreve o termo na lista de descrição</code></p>
+            </fieldset>
+            <fieldset class="fieldset">
+                <h2 id="DVI"class= "center subtitle"> DIVISÓRIAS </h2>
+                <p class="center"><code> &lt;div>	Define uma divisão ou seção em um documento</code></p>
+                <p class="center"><code> &lt;header>	Define um cabeçalho para o documento ou seção</code></p>
+                <p class="center"><code> &lt;footer>	Define um rodapé para o documento ou seção</code></p>
+                <p class="center"><code> &lt;nav>	Define um conjunto de links de navegação</code></p>
+                <p class="center"><code> &lt;section>	Define uma seção em um documento</code></p>
+                <p class="center"><code> &lt;article>	Define um conteúdo independente ou autônomo</code></p>
+                <p class="center"><code> &lt;aside>	Define conteúdo à parte do conteúdo ao qual está relacionado</code></p>
+                <p class="center"><code> &lt;main>	Especifica o conteúdo principal do documento</code></p>
+                
+                
+
+                <fieldset>
+
+                </fieldset>
+            </fieldset>
+
+        </main>
+        <footer>
+            <p class="center">&copy Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

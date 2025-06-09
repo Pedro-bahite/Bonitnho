@@ -1,0 +1,50 @@
+#container-grid
+{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    grid-template-rows: 1fr 0fr 20fr 1fr; /* Divisão feita com números altos para atingir a proporção desejada no site*/
+    grid-template-areas: "header header header"
+                         "nav nav nav"
+                         "main main main"
+                         "footer footer footer";
+}
+
+header
+{
+    grid-area: header;
+}
+main
+{
+    grid-area: main;
+}
+nav
+{
+    grid-area: nav;
+}
+footer
+{
+    grid-area: footer;
+}
+
+/*Responsividade dos sites*/
+
+@media screen and (max-width: 768px) {
+    #container-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto;
+      grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+    }
+  
+    header,
+    nav,
+    main,
+    footer {
+      width: 100%;
+    }
+  }
+  

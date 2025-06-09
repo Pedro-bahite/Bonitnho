@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../grid-princ.css">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div id="container-grid">
+        <header>
+            <a href="../index.html" class="button-header">Voltar</a>
+            <h1 class="center title-princ">Exemplos do CSS</h1>
+            <hr>
+        </header>
+        <nav id="nav-fix">
+            <ul class="nav-container">
+                <li><a href="" class="nav-button">Link 1</a></li>
+                <li><a href="" class="nav-button">Link 2</a></li>
+                <li><a href="" class="nav-button">Link 3</a></li>
+                <li><a href="" class="nav-button">Link 4</a></li>
+                <li><a href="" class="nav-button">Link 5</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2 class="subtitle text-main">Demonstrações</h2>
+                <p class="text-main">Bem, como visto anteriormente, o CSS é toda a estilização do seu site, da sua página, e aqui, você verá pequenos exemplos do funcionamento dela, com códigos a mostra para você utilizar!</p>
+            </section>
+            
+            <fieldset class="fieldset-css"><br>
+                <section class="text-main">
+                    <h2>Seletores e IDs</h2><br>
+                    <p>No CSS, usamos seletores para dizer ao navegador quais elementos queremos estilizar. </p><br>
+                        <p>Um dos seletores mais comuns é o ID, que é identificado com o símbolo # (cerquilha). </p> <br>
+                        <p>Cada ID deve ser único na página e serve para aplicar estilos específicos a um único elemento.</p><br> 
+                        
+                        <p> Por exemplo, se um elemento tem o ID "menu", podemos usar #menu no CSS para mudar sua cor, tamanho ou posição. </p><br>
+
+                        <p>Além do ID, também podemos usar classes, que são identificadas com um ponto (.) antes do nome. As classes podem ser aplicadas a vários elementos ao mesmo tempo, o que é útil quando queremos que vários itens compartilhem o mesmo estilo.</p><br>
+                        
+                        <p>Combinando esses seletores, conseguimos criar páginas bem organizadas, com estilos personalizados para cada parte da estrutura do site.</p><br>
+
+                        <h3>Alguns exemplos: </h3>
+                        <code>
+                            <pre>
+
+/* ID: usa-se o símbolo # seguido do nome do ID */
+#minhaDiv {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+
+/* Classe: usa-se o ponto . seguido do nome da classe */
+.caixa {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+/* Elemento: seleciona diretamente pelo nome da tag HTML */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Combinando seletores: */
+div.caixa {
+    background-color: lightgray;
+}
+
+#minhaDiv p {
+    font-weight: bold;
+}
+
+                            </pre>
+                        </code>
+                </section>
+            </fieldset><br>
+
+            <fieldset class="fieldset-css">
+                <section class="text-main"><br>
+                    <h2>Propriedades e estilos comuns</h2><br>
+                    <p>O CSS, como você viu no exemplo acima, ele usa propriedades para dar características a seus elementos, veja alguns deles: </p>
+                    <pre>
+
+
+color → Cor do texto
+
+background-color → Cor de fundo
+
+font-size → Tamanho da letra
+
+font-family → Fonte usada (ex: Arial, Verdana)
+
+text-align → Alinhamento do texto (esquerda, centro, direita)
+
+margin → Espaço externo do elemento
+
+padding → Espaço interno do elemento
+
+border → Borda do elemento
+
+width / height → Largura e altura
+
+                    </pre>
+                    <fieldset class="fieldset-code">
+                        <section>
+                                <h3>Exemplo na prática:</h3><br>
+                                <code>
+                                    <pre>
+.font-color
+{
+    color: red;
+}
+                                    </pre>
+                                </code>
+                                <p>Resultado: </p>
+                                <p style="color: red; margin-left: 5%;">Esse é o texto via CSS personalizado na cor vermelha</p>
+                            </section>
+                    </fieldset>
+                </section>
+            </fieldset><br>
+            <fieldset class="fieldset-css">
+                <section class="text-main"><br>
+                    <h2>Modelo de caixa</h2>
+                    <p>O modelo de caixa é basicamente o que o nome diz: A "caixa" que o seu elemento tem.</p><br>
+                    <p>Nele temos:</p><br>
+                    <pre>
+content (conteúdo),
+
+padding (espaço interno),
+
+border (borda)
+
+margin (espaço externo)
+
+                    </pre>
+                    <fieldset class="fieldset-code">
+                        <h3>Exemplo: </h3>
+                        <code>
+                            <pre>
+    
+    .card {
+      border: 1px solid gray;
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+                            </pre>
+                            <p>Resultado: </p><br>
+                            <p style="border: 1px solid gray; padding: 20px; margin-bottom: 10px; color: red;">Esse é o resultado utilizando os atributos do modelo de caixa</p>
+                        </code>
+                    </fieldset>
+                </section>
+            </fieldset>
+
+            <fieldset class="fieldset-css">
+                <section class="text-main"><br>
+                    <h2>Animações e Transições</h2><br>
+                    <p>A animações e transições no CSS serve para deixar a sua página um pouco mais dinâmica, vamos ver os comandos.</p>
+                    <code>
+                        <pre>
+
+transition → Animação suave entre estilos (ex: cor mudando)
+
+@keyframes → Animações mais complexas
+
+animation-name, animation-duration, etc.
+
+                        </pre>
+                        <fieldset class="fieldset-code">
+                            <h3>Exemplos</h3><br>
+                            <code>
+                                <pre>
+    @keyframes colorir {
+        0%{
+            color: black;
+        }
+        25%
+        {
+            color: red;
+        }
+        50%
+        {
+            color: yellow;
+        }
+        75%
+        {
+            color: orange;
+        }
+        100%
+        {
+            color: white;
+        }
+    }
+
+    /*Outra parte*/
+
+    #colorirFonte
+    {
+        animation: colorir 3s infinite alternate;
+    }
+                                </pre>
+                            </code>
+                        </code>
+
+                        <p>Resultado: </p><br>
+                        <p id="colorir" style="margin-left: 5%;">Colorindo sem parar</p>
+                        </fieldset>
+                </section>
+            </fieldset>
+        </main>
+        <footer>
+            <p class="center">&copy Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

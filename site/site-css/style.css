@@ -1,0 +1,206 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p
+{
+    font-size: 20px;
+}
+
+header
+{
+    height: auto;
+}
+.title-princ
+{
+    margin: 2%;
+    font-size: 50px;
+}
+
+.subtitle
+{
+    margin-top: 2%;
+    font-size: 30px;
+    margin-bottom: 2%;
+}
+
+.nav-container
+{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin-left: 30%;
+    margin-right: 2%;
+    padding: 10px;
+}
+.text-main
+{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.fieldset
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    padding-bottom: 2%;
+    background-color: #dac7b0;
+}
+
+.nav-button
+{
+    padding: 10px;
+}
+
+footer
+{
+    height: auto;
+}
+
+.center
+{
+    text-align: center;
+}
+
+.img-geral
+{
+    border-radius: 2%;
+}
+
+.list-size
+{
+    font-size: 20px;
+}
+
+.img-ling
+{
+    height: 250px;
+    opacity: 50%;
+    transition: 0.3s;
+    background-color: none;
+    margin: 30px;
+    padding: 5px;
+}
+.img-ling:hover
+{
+    opacity: 100%;
+    border-radius: 10%;
+    transform: scale(0.9);
+    cursor: pointer;
+    box-shadow: 0px 3px 3px black;
+}
+
+.fig-container
+{
+    display: flex;
+    margin-left: 18%;
+}
+.button-header
+{
+    top: 10%;
+    padding: 10px;
+}
+body{
+    background-color: #ebdfd0;
+    
+}
+header{
+    background-color: #266980;
+}
+nav{
+    background-color: #4F93AA;
+}                          
+.nav-button:hover{
+    background-color: #39b0d4;
+}  
+.nav-container a {
+    color: aliceblue;
+    text-decoration: none;
+}
+h1{
+    color: aliceblue;
+}
+.fixado
+{
+    position: fixed;
+    width: 100%;
+}
+.destaque
+{
+    font-size: 25px;
+}
+
+a
+{
+    color: #001350;
+}
+                       
+pre
+{
+    font-size: 16px;
+}
+
+.fieldset-code
+{
+    background-color: #f0f0f0;
+    border-radius: 1%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-container {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 5%;
+    }
+  
+    .nav-button {
+      padding: 10px 0;
+    }
+  
+    .text-main,
+    .fieldset {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  
+    .fig-container {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+    }
+  
+    .img-ling {
+      width: 80%;
+      height: auto;
+      margin: 10px;
+    }
+  
+    .title-princ {
+      font-size: 28px;
+      text-align: center;
+    }
+  
+    .subtitle {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .destaque {
+      font-size: 22px;
+    }
+  
+    .list-size {
+      font-size: 18px;
+    }
+  
+    .img-geral {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
